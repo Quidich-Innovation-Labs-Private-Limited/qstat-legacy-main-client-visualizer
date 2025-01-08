@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/qstat-legacy-main-client-visualizer/static/css/main.825cc743.css",
-    "main.js": "/qstat-legacy-main-client-visualizer/static/js/main.b7e967a1.js",
+    "main.js": "/qstat-legacy-main-client-visualizer/static/js/main.846fb308.js",
     "static/js/787.1311ec6f.chunk.js": "/qstat-legacy-main-client-visualizer/static/js/787.1311ec6f.chunk.js",
     "static/media/pitch.jpeg": "/qstat-legacy-main-client-visualizer/static/media/pitch.bd21ca41f898f513cc09.jpeg",
     "static/media/Scroll.png": "/qstat-legacy-main-client-visualizer/static/media/Scroll.3e12adca60cbdd622ed3.png",
     "index.html": "/qstat-legacy-main-client-visualizer/index.html",
     "static/media/index.cjs": "/qstat-legacy-main-client-visualizer/static/media/index.cd351d7c31d0d3fccf96.cjs",
     "main.825cc743.css.map": "/qstat-legacy-main-client-visualizer/static/css/main.825cc743.css.map",
-    "main.b7e967a1.js.map": "/qstat-legacy-main-client-visualizer/static/js/main.b7e967a1.js.map",
+    "main.846fb308.js.map": "/qstat-legacy-main-client-visualizer/static/js/main.846fb308.js.map",
     "787.1311ec6f.chunk.js.map": "/qstat-legacy-main-client-visualizer/static/js/787.1311ec6f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.825cc743.css",
-    "static/js/main.b7e967a1.js"
+    "static/js/main.846fb308.js"
   ]
 }
