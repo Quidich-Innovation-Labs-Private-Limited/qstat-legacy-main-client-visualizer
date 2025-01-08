@@ -1,7 +1,7 @@
 {
   "name": "qstat-main",
   "version": "0.1.0",
-  "homepage": "https://Quidich-Innovation-Labs-Private-Limited.github.io/qstat-main",
+  "homepage": "https://Quidich-Innovation-Labs-Private-Limited.github.io/qstat-legacy-main-client-visualizer",
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "^2.1.5",
