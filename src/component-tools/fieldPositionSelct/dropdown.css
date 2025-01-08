@@ -1,0 +1,13 @@
+.marginSetup {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: -5px;
+}
+
+.selectedOption {
+    font-size: 10px !important;
+}
+
+.arrowIcon {
+    font-size: 22px !important;
+}

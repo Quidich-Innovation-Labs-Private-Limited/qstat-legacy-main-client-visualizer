@@ -1,0 +1,301 @@
+.carousel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.carousel-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  padding: 10px 100px;
+  background: rgb(255, 255, 255);
+  color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.live-screen-text {
+  font-size: 2.2vw !important;
+  color: white;
+}
+
+.compare-button {
+  padding: 1vw;
+  font-size: 1.1vw;
+  background-color: #fdbb2f;
+  outline: none;
+  color: black;
+  width: 8vw;
+  height: 3vw;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.launch-button {
+  padding: 1vw;
+  font-size: 1.1vw;
+  outline: none;
+  background-color: #fdbb2f;
+}
+
+.select-match {
+  display: flex;
+  flex-direction: row;
+  padding: 0vw;
+}
+
+.select-match-options {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+  padding: 0vw;
+}
+
+.select-match-div {
+  width: 190px;
+}
+
+#user-form {
+  width: 88%;
+}
+
+.search-button,
+.reset-button {
+  padding: 0vw;
+  outline: none;
+  width: 75px;
+  background-color: #fdbb2f;
+}
+
+.select-div {
+  display: flex;
+  flex-direction: row;
+  width: 88%;
+  margin-top: 1.2vw;
+}
+
+.select-div-item {
+  width: 10px;
+}
+
+.filter-button {
+  padding: 0.5vw;
+  font-size: 1vw;
+  outline: none;
+  width: 9vw;
+  background-color: #fdbb2f;
+}
+
+label {
+  font-size: 0.92vw;
+}
+
+.ball-select {
+  padding: 0vw;
+  font-size: 1.5vw;
+  outline: none;
+  width: 11vw;
+  background-color: #fdbb2f;
+}
+
+.ball-remove {
+  padding: 0vw;
+  font-size: 1.5vw;
+  outline: none;
+  width: 11vw;
+  background-color: green;
+}
+
+.inner-select {
+  background-color: #fdbb2f;
+  position: absolute;
+  left: 0;
+  margin: 5px 10px;
+  right: 0;
+}
+
+.select-button {
+  height: 1.5vw;
+  font-size: 0.9vw;
+  width: 5vw;
+  background-color: #fdbb2f;
+}
+
+.inner-remove {
+  background-color: #008000;
+  position: absolute;
+  left: 0;
+  margin: 5px 10px;
+  right: 0;
+}
+
+.remove-button {
+  height: 1.5vw;
+  color: white;
+  font-size: 0.9vw;
+  width: 5vw;
+  background-color: #008000;
+}
+
+.inner2 {
+  background-color: #ffa500;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 11vw;
+  right: 4.75vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.result {
+  background: rgb(0, 0, 0);
+  color: white;
+  height: 1.3vw;
+  border-radius: 150px;
+  width: 1.2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer p {
+  color: white;
+  cursor: pointer;
+}
+
+.inner-select:hover {
+  background-color: #fdbb2f;
+  cursor: pointer;
+}
+
+.batsmen-bowler-div {
+  padding: 1.5vw 0vw 0vw 0vw;
+}
+
+#batsmanname {
+  background-color: black;
+  color: white;
+  font-size: 0.8vw;
+  width: 8vw;
+}
+
+#bowlername {
+  font-size: 0.8vw;
+  width: 8vw;
+}
+.select-all {
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+  position: fixed;
+  right: 20px;
+  background: #fff;
+  padding: 1vw;
+}
+.overcover {
+  /* padding: 1.3vw 1vw 0vw 0vw; */
+  background-color: white;
+  /* margin: auto; */
+  margin: 1vw;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.overnumber {
+  background-color: #fdbb2f;
+  width: 3.5vw;
+  height: 3.5vw;
+  position: absolute;
+  top: 0vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw !important;
+}
+
+.scatter-plot {
+  width: 13.005vw !important;
+  height: 12vw !important;
+  background-size: cover;
+}
+
+.outer {
+  width: 13.005vw;
+  height: 12vw;
+  background-image: url("/src/assets/pitch.jpeg") !important;
+  background-size: cover;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.ball-table {
+  /* width: 100%;
+  height: 100%; */
+}
+
+.launch {
+  width: 7vw !important;
+  padding: 1vw;
+  background-color: hsl(155, 84%, 33%);
+  color: #fff;
+  font-size: 1vw !important;
+  border-radius: 0.5vw;
+  margin-top: 0vw;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+
+.select-box {
+  width: 200px;
+  overflow: hidden;
+  border: 1px solid #000;
+  position: relative;
+  padding: 10px 0;
+}
+
+.select-box:after {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #f00;
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  content: "";
+  z-index: 98;
+}
+
+.select-box select {
+  width: 220px;
+  border: 0;
+  position: relative;
+  z-index: 99;
+  background: none;
+}

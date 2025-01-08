@@ -1,0 +1,45 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu {
+  width: 18vw;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  flex-direction: column;
+}
+.menu button {
+  background: #ebeb2e;
+  outline: none;
+  border: 0px;
+  padding: 1vw 2vw;
+  border-radius: 5vw;
+  margin-top: 7vw;
+}
+.menu-list {
+  margin-left: 0vw;
+}
+.menu-list h4 {
+  font-weight: 400;
+  margin-left: 2vw;
+}
+.menu-list div {
+  width: 11.7vw;
+  padding: 1vw 0 1vw 6vw;
+  border-right: 0.3vw solid grey;
+  border-bottom: 1px solid grey;
+}
+.logo {
+  width: 18vw;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(59, 113, 230);
+}
+.logo img {
+  height: 12vw;
+  margin-top: -2vw;
+}

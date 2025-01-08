@@ -1,0 +1,12 @@
+.dashboardstyle{
+    background-image: url("/src/assets/Scroll.png") !important;
+    /* background-size: cover; */
+    /* padding: 1.3vw 3vw 0vw 0vw; */
+    /* margin-right: 3vw; */
+    width: 83vw;
+    height: 1476px;
+    background-size: cover;
+    background-color: #FFFFFF;
+    position: relative;
+    
+}

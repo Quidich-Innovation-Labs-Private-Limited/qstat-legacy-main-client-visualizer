@@ -1,0 +1,236 @@
+.tablebuttonpage3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+* {
+  box-sizing: border-box;
+}
+.select_scatter_plotpage3 {
+  width: 23vw !important;
+  height: 20vw !important;
+  background-image: url("/src/assets/pitch.jpeg") !important;
+  background-size: cover;
+}
+.mag-image-playerspage3 svg {
+  background-size: cover;
+  font-size: 24px;
+  width: 33.32vw;
+  height: 28.905vw;
+}
+.image-containerpage3 {
+  background: url("/src/assets/pitch.jpeg") no-repeat;
+  background-size: cover;
+  width: 31.32vw !important;
+  height: 28.905vw !important;
+}
+.tableheaderpage3 {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 1vw;
+  background: #ffffff;
+  color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+.tabpage3 {
+  background: white;
+  border: 1px rgb(228, 228, 228) solid;
+  padding: 0vw 0vw;
+  width: 18vw;
+  margin: 1vw 2vw 2vw 2vw;
+  border-radius: 1vw;
+  padding-bottom: 1vw;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dotball2 {
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+}
+.tab-headingpage3 {
+  border-bottom: rgb(236, 70, 41) 2px solid;
+  padding: 1vw 0 1vw 0;
+  margin: 0 0 1vw 0;
+  font-weight: bold;
+}
+.tab-headingpage3ball2 {
+  border-bottom: rgb(236, 70, 41) 2px solid;
+  padding: 1vw 0 1vw 0;
+  margin: 0 0 1vw 0;
+  font-weight: bold;
+}
+.tab-textpage3 {
+  text-align: left;
+  margin: 0.4vw 0;
+  font-size: 1vw;
+  padding-left: 3vw;
+}
+.live-screen-div {
+  font-size: 40px;
+  color: white;
+}
+
+.live-screen-button {
+  width: 100%;
+  padding: 1vw;
+  font-size: 1vw;
+  outline: none;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4vw;
+}
+
+.launchdiv {
+  padding: 1vw;
+  width: 100vw;
+  text-align: center;
+  color: white;
+  font-size: 2vw;
+  letter-spacing: 1px;
+}
+.launch-screen-div {
+  width: 80%;
+  text-align: center;
+  color: white;
+  font-size: 2vw !important;
+  letter-spacing: 1px;
+}
+.selectdivPage3 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+  padding: 0.5vw;
+  color: #000;
+}
+
+.select-div-item {
+  width: 120px;
+  color: #000;
+}
+.search-button,
+.reset-button {
+  padding: 0.5vw;
+  font-size: 1vw;
+  outline: none;
+  width: 7vw;
+}
+.mag-image-playerspage3 {
+  width: 35vw;
+  height: 35vw;
+  background-color: white;
+  border-radius: 0.7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.mag-image-containerpage3 {
+  display: flex;
+  font-size: 0.9vw;
+  flex-direction: column;
+}
+.list-containerpage3 {
+  background-color: white;
+  width: 10vw;
+  height: 25vw;
+  margin-left: 2vw;
+  padding: 1vw;
+  overflow-y: auto;
+}
+.main-contentpage3 {
+  padding: 1vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.player-containerpage3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+}
+/*.player-id {
+  border: 1px solid gray;
+}*/
+.player-namepage3 {
+  color: white;
+  font-size: 1vw;
+}
+.header-container-page3 {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0vw;
+}
+.selected-playerpage3 {
+  border: 2px solid #000;
+  background-color: aqua;
+  color: #000;
+}
+.launch-buttonspage3 {
+  display: flex;
+  justify-content: space-around;
+}
+.launch-buttonpage3 {
+  width: 10vw;
+  padding: 1vw;
+  background-color: hsl(155, 84%, 33%);
+  color: #fff;
+  font-size: 1.5vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+.selected-playerpage3 .player-namepage3 {
+  color: #000;
+}
+
+.pairspage3 {
+  background: white;
+  display: flex;
+  width: 50vw;
+  margin-left: 25vw;
+  padding: 0.5vw;
+  flex-direction: column;
+}
+.pairpage3 {
+  margin: 0 0.5vw;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pair-listpage3 {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+}
+
+div {
+  font-size: 0.98vw !important;
+}
+
+.field-selectpage3 {
+  max-width: 50vw;
+  display: flex;
+}
