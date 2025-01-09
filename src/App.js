@@ -50,8 +50,8 @@ function App({ signOut, user }) {
                 <Switch>
                   <Route exact path="/compare_screen" component={Page3} />
                   <Route exact path="/ball_Screen" component={Page2} />
-                  <Route exact path="/dashboard" component={Dashboard} />
-                  <Route exact path="/" component={Page1} />
+                  <Route exact path="/" component={Dashboard} />
+                  <Route exact path="/match" component={Page1} />
                   <Route exact path="/team" component={Team} />
                   <Route exact path="/calender" component={Calender} />
                   <Route exact path="/documents" component={Documents} />
