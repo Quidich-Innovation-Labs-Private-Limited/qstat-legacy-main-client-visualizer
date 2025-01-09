@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { isEmpty, startCase, isNumber, filter, set, pick } from "lodash";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
-//import jsonData from "../../assets/data/db.json";
+import jsonData from "../../assets/data/db.json";
 import SeriesSelect from "./series-select";
 import MatchSelect from "./match-select";
 import InningsSelect from "./innings-select";
@@ -39,7 +39,7 @@ export default function Match() {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   // fixme: can move this state to ball-component as a dataset
   const [layer, setLayer] = useState([]);
-  const [jsonData, setJsonData] = useState({}); 
+  //const [jsonData, setJsonData] = useState({}); 
 
   const fetchMatch = () => {
     // axios
@@ -75,22 +75,22 @@ export default function Match() {
   // }, []);
 
 
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        try {
-          const parsedData = JSON.parse(e.target.result);
-          setJsonData(parsedData); // Update state with uploaded data
-          toast.success("JSON file uploaded successfully!");
-        } catch (error) {
-          toast.error("Invalid JSON file. Please upload a valid file.");
-        }
-      };
-      reader.readAsText(file);
-    }
-  };
+  // const handleFileUpload = (event) => {
+  //   const file = event.target.files[0];
+  //   if (file) {
+  //     const reader = new FileReader();
+  //     reader.onload = (e) => {
+  //       try {
+  //         const parsedData = JSON.parse(e.target.result);
+  //         setJsonData(parsedData); // Update state with uploaded data
+  //         toast.success("JSON file uploaded successfully!");
+  //       } catch (error) {
+  //         toast.error("Invalid JSON file. Please upload a valid file.");
+  //       }
+  //     };
+  //     reader.readAsText(file);
+  //   }
+  // };
   useEffect(() => {
     // fixme: index "0" is being used, so if there are more than 2 matches
     // filter will always pick the first match
@@ -147,7 +147,7 @@ export default function Match() {
         showAlert("Invalid data file! Please contact support");
       }
     }
-  }, [matchOption, inningsOption, seriesOption, jsonData]);
+  }, [matchOption, inningsOption, seriesOption]);
 
   useEffect(() => {
     if (!isEmpty(seriesOption)) {
@@ -367,7 +367,7 @@ export default function Match() {
           </button>
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", border:"1px solid black",padding:"10px",margin:"10px" }}>
+        {/* <div style={{ display: "flex", alignItems: "center", border:"1px solid black",padding:"10px",margin:"10px" }}>
       
       <input
         type="file"
@@ -375,7 +375,7 @@ export default function Match() {
         onChange={handleFileUpload} // Attach the new handler
       />
       Upload db.json file
-    </div>
+    </div> */}
       </div>
       {!isEmpty(overs) &&
         Object.keys(overs).length !== 0 &&
