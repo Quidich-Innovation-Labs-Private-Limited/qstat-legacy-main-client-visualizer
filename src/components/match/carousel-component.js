@@ -143,7 +143,7 @@ export default function CarouselComponent({
 
   return (
     <div className="ball-table">
-      <table>
+      <table >
         <tr>
           <td>
             <BallComponent
@@ -171,9 +171,12 @@ export default function CarouselComponent({
             />
           </td>
         </tr>
+        
         <FieldPositionSelect
-          changeBallReleaseStatus={changeBallReleaseStatus}
-        />
+        changeBallReleaseStatus={changeBallReleaseStatus}
+      />
+        
+        
       </table>
     </div>
   );

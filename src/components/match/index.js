@@ -11,6 +11,7 @@ import CarouselWrapper from "./carousel-wrapper";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { createWebsocketConnection } from "./helpers/create-websocket-connection";
+import logo from "../../assets/logo.png";
 
 import "./match.css";
 
@@ -91,6 +92,20 @@ export default function Match() {
   //     reader.readAsText(file);
   //   }
   // };
+
+
+  useEffect(() => {
+    if (!isEmpty(seriesOption)) {
+      const matches = jsonData[seriesOption].map((item) => ({
+        value: item.match_name,
+        label: startCase(item.match_name),
+      }));
+
+      setMatchOptions(matches);
+    }
+  }, [JSON.stringify(jsonData), seriesOption]);
+
+
   useEffect(() => {
     // fixme: index "0" is being used, so if there are more than 2 matches
     // filter will always pick the first match
@@ -104,21 +119,26 @@ export default function Match() {
         } else {
           setSeriesOption(seriesKey);
 
-          const matchName = jsonData[seriesKey]?.[0]?.match_name.trim();
+         console.log("matchOption => ", matchOption);
+
+          const matchName = matchOption?.trim();
+          console.log("matchName => ", matchName);
 
           if (isEmpty(matchName)) {
-            showAlert("Match name is empty.");
+           // showAlert("Match name is empty.");
+            console.log("Match name is empty.");
           } else {
             setMatchOption(matchName);
 
             const selectedSeries = jsonData[seriesKey];
-
+            console.log("selectedSeries => ", selectedSeries);
             if (isEmpty(selectedSeries) || selectedSeries.length === 0) {
               showAlert("Selected series data is empty.");
             } else {
               const selectedMatch = selectedSeries.filter(
                 (obj) => obj.match_name === matchName
               );
+              console.log("selectedMatch => ", selectedMatch);
 
               if (
                 isEmpty(selectedMatch) ||
@@ -149,16 +169,7 @@ export default function Match() {
     }
   }, [matchOption, inningsOption, seriesOption]);
 
-  useEffect(() => {
-    if (!isEmpty(seriesOption)) {
-      const matches = jsonData[seriesOption].map((item) => ({
-        value: item.match_name,
-        label: startCase(item.match_name),
-      }));
-
-      setMatchOptions(matches);
-    }
-  }, [JSON.stringify(jsonData), seriesOption]);
+ 
 
   const handleSelectAll = async (event) => {
     const { checked } = event.target;
@@ -182,14 +193,15 @@ export default function Match() {
   };
 
   const resetBallTransfer = async () => {
-    await axios.post(
-      `http://localhost:3001/files/transfer?entity=ball-json-hyperview`,
-      []
-    );
-    await axios.post(
-      `http://localhost:3001/files/transfer?entity=ball-json-middleman`,
-      []
-    );
+    
+    // await axios.post(
+    //   `http://localhost:3001/files/transfer?entity=ball-json-hyperview`,
+    //   []
+    // );
+    // await axios.post(
+    //   `http://localhost:3001/files/transfer?entity=ball-json-middleman`,
+    //   []
+    // );
   }
 
   const handleBallTransfer = (isMiddlemanSystem = false) => async () => {
@@ -245,29 +257,29 @@ export default function Match() {
           }
         }
       );
-      await axios.post(
-        `http://localhost:3001/files/transfer?entity=ball-json-${isMiddlemanSystem ? "middleman" : "hyperview"}`,
-        specificKeysForSelectedBalls
-      );
-      // console.log("specificKeysForSelectedBalls =>  ",transferSelectedBalls)
-      toast.success("Ball data transfered successfully!");
+      // await axios.post(
+      //   `http://localhost:3001/files/transfer?entity=ball-json-${isMiddlemanSystem ? "middleman" : "hyperview"}`,
+      //   specificKeysForSelectedBalls
+      // );
+      // // console.log("specificKeysForSelectedBalls =>  ",transferSelectedBalls)
+      // toast.success("Ball data transfered successfully!");
     } catch (error) {
-      console.error(error);
-      toast.error("Ball data transfer failed!");
+      // console.error(error);
+      // toast.error("Ball data transfer failed!");
     }
   };
 
   const handlePlayerInfoTransfer = async (selectedPlayers) => {
-    try {
-      await axios.post(
-        "http://localhost:3001/files/transfer?entity=player",
-        selectedPlayers
-      );
-      toast.success("Player data transfered successfully!");
-    } catch (error) {
-      console.error(error);
-      toast.error("Player data transfer failed!");
-    }
+    // try {
+    //   await axios.post(
+    //     "http://localhost:3001/files/transfer?entity=player",
+    //     selectedPlayers
+    //   );
+    //   toast.success("Player data transfered successfully!");
+    // } catch (error) {
+    //   console.error(error);
+    //   toast.error("Player data transfer failed!");
+    // }
   };
 
   const handleClickReset = () => {
@@ -309,15 +321,19 @@ export default function Match() {
   }
 
   const showAlert = (message) => {
-    toast.error(message);
+    //toast.error(message);
+    console.log("error message => ",message);
   };
 
   return (
     <>
       <div className="carousel-header">
+     
         <div className="select-match">
+        {/* <img src={logo} alt="Quidich" style={{width:"5%", margin:"10px"}} /> */}
           <form id="user-form" onSubmit={handleSubmit}>
             <div id="app" className="select-match-options">
+           
               <SeriesSelect
                 seriesOptions={seriesOptions}
                 seriesOption={seriesOption}
@@ -332,9 +348,9 @@ export default function Match() {
                 inningsOption={inningsOption}
                 setInningsOption={setInningsOption}
               />
-              <button type="submit" className="search-button">
+              {/* <button disabled  type="submit" className="search-button">
                 Search
-              </button>
+              </button> */}
             </div>
           </form>
         </div>
@@ -355,7 +371,7 @@ export default function Match() {
             control={<Checkbox onChange={handleSelectAll} />}
             label="Select all"
           />
-          <button className="reset-button" onClick={handleBallTransfer(false)}>
+          {/* <button className="reset-button" onClick={handleBallTransfer(false)}>
             Transfer ball (H)
           </button>
           <button
@@ -364,7 +380,7 @@ export default function Match() {
             onClick={handleBallTransfer(true)}
           >
             Transfer ball (M)
-          </button>
+          </button> */}
         </div>
 
         {/* <div style={{ display: "flex", alignItems: "center", border:"1px solid black",padding:"10px",margin:"10px" }}>

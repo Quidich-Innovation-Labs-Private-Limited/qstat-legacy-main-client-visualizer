@@ -54,7 +54,9 @@
   width: calc(100% / 4);
 }
 .carousel-content.show-6 > * {
-  width: calc(100% / 6);
+/* width: calc(100% / 6); */
+flex: 1;
+
 }
 .left-arrow,
 .right-arrow {

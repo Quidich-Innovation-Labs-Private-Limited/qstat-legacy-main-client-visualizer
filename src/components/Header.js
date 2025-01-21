@@ -85,7 +85,7 @@ function Header(props) {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="square">
-              <MenuItem
+              {/* <MenuItem
                 id="home"
                 to="/Home"
                 active={activeMenu === "/" ? true : false}
@@ -109,7 +109,7 @@ function Header(props) {
                 >
                   Dashboard
                 </NavLink>
-              </MenuItem>
+              </MenuItem> */}
               <MenuItem
                 id="match"
                 to="/match"
@@ -136,7 +136,7 @@ function Header(props) {
                   Match{" "}
                 </NavLink>
               </MenuItem>
-              <MenuItem
+              {/* <MenuItem
                 id="team"
                 to="/team"
                 active={activeMenu === "/team" ? true : false}
@@ -160,8 +160,8 @@ function Header(props) {
                 >
                   Team
                 </NavLink>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 id="player"
                 to="/player"
                 active={activeMenu === "/player" ? true : false}
@@ -185,8 +185,8 @@ function Header(props) {
                 >
                   Player
                 </NavLink>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 id="field_simulator"
                 to="/field_simulator"
                 active={activeMenu === "/field_simulator" ? true : false}
@@ -212,8 +212,8 @@ function Header(props) {
                 >
                   Field Simulator
                 </NavLink>
-              </MenuItem>
-              <MenuItem>
+              </MenuItem> */}
+              {/* <MenuItem>
                 <span
                   style={{
                     color: "#626262",
@@ -226,8 +226,8 @@ function Header(props) {
                 >
                   Personal
                 </span>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 id="profile"
                 to="/profile"
                 active={activeMenu === "/profile" ? true : false}
@@ -251,8 +251,8 @@ function Header(props) {
                 >
                   Profile
                 </NavLink>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 id="settings"
                 to="/settings"
                 active={activeMenu === "/settings" ? true : false}
@@ -276,8 +276,8 @@ function Header(props) {
                 >
                   Settings
                 </NavLink>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 id="support"
                 to="/support"
                 active={activeMenu === "/support" ? true : false}
@@ -301,13 +301,13 @@ function Header(props) {
                 >
                   Support
                 </NavLink>
-              </MenuItem>
-              <MenuItem
+              </MenuItem> */}
+              {/* <MenuItem
                 onClick={props.signOut}
                 icon={<FiLogOut color="#626262" />}
               > 
                 <span style={{ color: "#626262" }}>Logout</span>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </SidebarContent>
         </ProSidebar>

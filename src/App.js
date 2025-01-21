@@ -14,7 +14,7 @@ import Header from "../src/components/Header";
 
 import "./style/main.css";
 
-import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router, Redirect } from "react-router-dom";
 import Page1 from "./components/match";
 import Page2 from "./components/Page2/Page2";
 import Page3 from "./components/Page3/Page3";
@@ -50,7 +50,9 @@ function App({ signOut, user }) {
                 <Switch>
                   <Route exact path="/compare_screen" component={Page3} />
                   <Route exact path="/ball_Screen" component={Page2} />
-                  <Route exact path="/" component={Dashboard} />
+                  <Route exact path="/">
+      <Redirect to="/match" />
+    </Route>
                   <Route exact path="/match" component={Page1} />
                   <Route exact path="/team" component={Team} />
                   <Route exact path="/calender" component={Calender} />

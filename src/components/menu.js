@@ -13,19 +13,19 @@ const menu = (props) => {
         <div className="menu-list">
           <h4>Menu</h4>
           <div>Dashboard</div>
-          <div>Matches</div>
+          {/* <div>Matches</div>
           <div>Team</div>
           <div>Player</div>
-          <div>Field Simulator</div>
+          <div>Field Simulator</div> */}
         </div>
-        <div className="menu-list">
+        {/* <div className="menu-list">
           <h4>Personal</h4>
           <div>Profile</div>
           <div>Settings</div>
           <div>Support</div>
-        </div>
+        </div> */}
 
-        <button>log out</button>
+        {/* <button>log out</button> */}
       </div>
     </>
   );
