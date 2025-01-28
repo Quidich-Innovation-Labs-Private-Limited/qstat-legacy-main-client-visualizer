@@ -119,10 +119,10 @@ export default function Match() {
         } else {
           setSeriesOption(seriesKey);
 
-         console.log("matchOption => ", matchOption);
+       //  console.log("matchOption => ", matchOption);
 
           const matchName = matchOption?.trim();
-          console.log("matchName => ", matchName);
+         // console.log("matchName => ", matchName);
 
           if (isEmpty(matchName)) {
            // showAlert("Match name is empty.");
@@ -131,14 +131,14 @@ export default function Match() {
             setMatchOption(matchName);
 
             const selectedSeries = jsonData[seriesKey];
-            console.log("selectedSeries => ", selectedSeries);
+           // console.log("selectedSeries => ", selectedSeries);
             if (isEmpty(selectedSeries) || selectedSeries.length === 0) {
               showAlert("Selected series data is empty.");
             } else {
               const selectedMatch = selectedSeries.filter(
                 (obj) => obj.match_name === matchName
               );
-              console.log("selectedMatch => ", selectedMatch);
+             // console.log("selectedMatch => ", selectedMatch);
 
               if (
                 isEmpty(selectedMatch) ||
